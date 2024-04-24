@@ -1,0 +1,16 @@
+
+public class Controller {
+
+    public void run() {
+        int cmd = 0;
+        Scanner scanner = new Scanner(System.in);
+        
+        while (cmd != -1) {
+            System.out.println(Введите команду );
+            System.out.println(1. Завести новое животное n 2. Просмотреть животное 0. Выход);
+            cmd = scanner.nextLine();
+
+        }
+
+    }
+}
