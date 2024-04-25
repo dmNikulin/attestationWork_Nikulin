@@ -10,7 +10,7 @@ public class Writer {
     public void save (Animal animal, String type) {
         try {
             FileWriter writer = new FileWriter("programm\\data\\animals.txt", true);
-            writer.write(type + " " + animal.toString() + "\n");
+            writer.write(type + "[" + animal.toString() + "]" + "\n");
             writer.close();
         } 
         catch (IOException e) {

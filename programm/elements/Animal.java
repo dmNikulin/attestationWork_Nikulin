@@ -37,7 +37,7 @@ public class Animal {
 
     @Override
     public String toString() {
-        return "Кличка: " + name + " \nДата рождения: " + birtday + "\nКоманды: " + command + "\n";
+        return "Кличка: " + name + ", дата рождения: " + birtday + ", команды: " + command;
     }
     
 }
