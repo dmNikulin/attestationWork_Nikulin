@@ -1,3 +1,5 @@
+-- ______________________________________________________________________________________________Задание 8 и 9
+
 DROP DATABASE IF EXISTS mans_friends;
 CREATE DATABASE mans_friends;
 show databases;
@@ -135,12 +137,12 @@ UNION SELECT animal_type, animal_name, commands, day_of_birth FROM dogs
 UNION SELECT animal_type, animal_name, commands, day_of_birth FROM cats
 UNION SELECT animal_type, animal_name, commands, day_of_birth FROM hamsters;
 
-/*
+-- ______________________________________________________________________________________________Конец задания 8 и 9
+
+/* ______________________________________________________________________________________________ Задание 10
 DELETE FROM animals
 WHERE animal_type = 'верблюд';
-*/
 
-/*
 CREATE TABLE baggage_animals
 AS 
 (
@@ -149,11 +151,10 @@ FROM horses
 UNION SELECT animal_type, animal_name, commands, day_of_birth
 FROM donkeys
 );
-
 SELECT * FROM baggage_animals;
-*/
+ ______________________________________________________________________________________________ Конец задания 10 */
 
-/*
+/* ______________________________________________________________________________________________ Задание 11
 DROP TABLE IF EXISTS young_animals;
 CREATE TABLE young_animals 
 (
@@ -173,13 +174,15 @@ WHERE day_of_birth < "2023-04-21" AND day_of_birth > "2021-04-21";
 
 UPDATE young_animals 
 SET age = (2024 - YEAR(day_of_birth));
-*/
+______________________________________________________________________________________________ Конец задания 11 */
 
-/*
+
+
+/* ______________________________________________________________________________________________ Задание 12
 SELECT *
 FROM animals a
 LEFT JOIN young_animals y ON a.animal_id = y.animal_id; 
-*/
+______________________________________________________________________________________________ Конец задания 12 */
 
 
 
